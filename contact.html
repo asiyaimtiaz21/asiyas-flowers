@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Asiya's Flowers - Get in touch for custom arrangements, wedding consultations, and floral inquiries.">
+    <title>Contact | Asiya's Flowers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Asiya's <span>Flowers</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Contact Us</h1>
+            <p>Let's talk flowers</p>
+        </div>
+
+        <!-- Intro Paragraph -->
+        <section class="contact-intro">
+            <div class="contact-intro-content">
+                <p>We'd love to hear from you! Whether you have a question about our services, want to schedule a wedding consultation, or are ready to place an order, our team is here to help. Reach out using the form below or contact us directly—we typically respond within 24 hours during business days.</p>
+            </div>
+        </section>
+
+        <!-- Contact Information Cards -->
+        <section class="contact-info-section">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">&#128205;</div>
+                    <h3>Visit Our Studio</h3>
+                    <p>847 Magnolia Avenue, Suite 102</p>
+                    <p>Rosewood Heights, FL 33701</p>
+                    <p class="contact-note">Free parking available in rear lot</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">&#128222;</div>
+                    <h3>Call or Text</h3>
+                    <p>(727) 555-0192</p>
+                    <p class="contact-note">For same-day orders, please call</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">&#9993;</div>
+                    <h3>Email Us</h3>
+                    <p>hello@asiyasflowers.com</p>
+                    <p class="contact-note">We respond within 24 hours</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">&#128337;</div>
+                    <h3>Studio Hours</h3>
+                    <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
+                    <p>Saturday: 10:00 AM – 5:00 PM</p>
+                    <p>Sunday: 11:00 AM – 4:00 PM</p>
+                    <p class="contact-note">Closed major holidays</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="contact-form-wrapper">
+                <h2 class="section-title">Send Us a Message</h2>
+                <p class="contact-form-subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                <form action="#" method="POST" class="contact-form-centered">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Jane Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="wedding">Wedding Florals</option>
+                                <option value="gift">Gift Bouquet</option>
+                                <option value="event">Event Styling</option>
+                                <option value="subscription">Flower Subscription</option>
+                                <option value="custom">Custom Arrangement</option>
+                                <option value="sympathy">Sympathy Flowers</option>
+                                <option value="corporate">Corporate Flowers</option>
+                                <option value="workshop">Workshop/Class</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Event/Delivery Date</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Estimated Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select a range...</option>
+                                <option value="under-50">Under $50</option>
+                                <option value="50-100">$50 – $100</option>
+                                <option value="100-250">$100 – $250</option>
+                                <option value="250-500">$250 – $500</option>
+                                <option value="500-1000">$500 – $1,000</option>
+                                <option value="1000-plus">$1,000+</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-full">
+                        <label for="message">Your Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" required placeholder="Tell us about your floral needs, share your vision, or ask any questions you have. The more details you provide, the better we can assist you."></textarea>
+                    </div>
+
+                    <div class="form-group form-group-full">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span>Sign me up for occasional updates on seasonal specials and workshop announcements</span>
+                        </label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="faq-wrapper">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>How far in advance should I book?</h3>
+                        <p>For weddings, we recommend 3–6 months to ensure availability for your date. Events typically need 2–4 weeks notice. Gift bouquets and smaller arrangements can often be accommodated with 24–48 hours notice, or same-day if you call.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Do you offer delivery?</h3>
+                        <p>Yes! We deliver throughout Rosewood Heights and surrounding areas within a 25-mile radius. Delivery fees range from $10–$25 depending on distance. In-store pickup is always free, and we'll have your arrangement ready at your requested time.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Can I request specific flowers?</h3>
+                        <p>Absolutely. We'll do our best to source your requested blooms, though seasonal availability and market conditions may affect options. If a specific flower isn't available, we'll reach out to discuss beautiful alternatives before proceeding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Asiya's Flowers</h4>
+                <p>Boutique flower shop and floral design studio, creating beautiful moments through the art of flowers.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Mon - Fri: 9am - 6pm</p>
+                <p>Saturday: 10am - 5pm</p>
+                <p>Sunday: 11am - 4pm</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>847 Magnolia Avenue, Suite 102</p>
+                <p>Rosewood Heights, FL 33701</p>
+                <p>(727) 555-0192</p>
+                <p>hello@asiyasflowers.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Asiya's Flowers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

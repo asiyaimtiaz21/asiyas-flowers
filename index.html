@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asiya's Flowers - Boutique flower shop and floral design studio offering beautiful arrangements for every occasion.">
+    <title>Asiya's Flowers | Boutique Floral Design Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Asiya's <span>Flowers</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('public/images/hero.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Where Every Petal Tells a Story</h1>
+                <p class="hero-subheadline">Handcrafted floral designs for life's most meaningful moments</p>
+                <div>
+                    <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+                    <a href="contact.html" class="btn btn-secondary" style="margin-left: 1rem;">Request a Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section>
+            <h2 class="section-title">Welcome to Asiya's Flowers</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="color: var(--color-text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                    Nestled in the heart of the Flower District, Asiya's Flowers is a boutique flower shop and floral design studio dedicated to the art of bringing nature's beauty into your everyday life. We believe that flowers have the remarkable ability to express emotions words sometimes cannot—whether it's love, gratitude, celebration, or sympathy.
+                </p>
+                <p style="color: var(--color-text-light); font-size: 1.1rem; line-height: 1.8;">
+                    Our passionate team of floral designers works closely with each client to create arrangements that are as unique as the moments they celebrate. From the first bloom to the final bow, every detail is thoughtfully considered to ensure your flowers leave a lasting impression.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Services Section -->
+        <section style="background-color: var(--color-white); margin: 0; max-width: 100%; padding: 5rem 2rem;">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <h2 class="section-title">Our Signature Services</h2>
+                <p class="section-subtitle">From intimate gestures to grand celebrations, we offer a range of floral services tailored to your needs.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">&#128141;</div>
+                        <h3>Wedding Florals</h3>
+                        <p>Your love story deserves flowers as beautiful as the journey you're beginning together. We design everything from romantic bridal bouquets to stunning ceremony arches and elegant reception centerpieces, ensuring every floral element reflects your unique style and vision.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">&#127873;</div>
+                        <h3>Gift Bouquets</h3>
+                        <p>Sometimes the perfect gift blooms. Our hand-tied bouquets and boxed arrangements make thoughtful gifts for birthdays, anniversaries, thank-yous, or simply to brighten someone's day. Each arrangement is crafted with seasonal flowers and delivered fresh to your recipient's door.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">&#127799;</div>
+                        <h3>Event Styling</h3>
+                        <p>Transform any space into a floral wonderland. Whether you're hosting a corporate gathering, an intimate dinner party, or a milestone celebration, our event styling services create memorable atmospheres that leave guests in awe.</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2.5rem;">
+                    <a href="services.html" class="btn btn-primary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Bouquet Section -->
+        <section class="featured-bouquet">
+            <div class="featured-bouquet-inner">
+                <div class="featured-bouquet-image">
+                    <img src="public/images/bouquet.jpg" alt="Signature bouquet with pink roses, peonies, and eucalyptus" loading="lazy">
+                </div>
+                <div class="featured-bouquet-text">
+                    <h2>Our Signature Collection</h2>
+                    <p>Each arrangement is a testament to our dedication to beauty and quality. Our signature bouquets feature hand-selected seasonal blooms, thoughtfully composed to create a stunning impression that lasts.</p>
+                    <p>From romantic roses to elegant peonies, every stem is chosen with care and artfully arranged to bring joy to any occasion.</p>
+                    <a href="gallery.html" class="btn btn-primary" style="margin-top: 1rem;">View Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview Section -->
+        <section>
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="public/images/about.jpg" alt="Florist arranging a beautiful bouquet of roses and peonies" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h2>The Heart Behind the Blooms</h2>
+                        <p>Asiya's Flowers was born from a lifelong passion for the natural world and a belief that flowers have the power to transform ordinary moments into extraordinary memories. What began as a small studio creating arrangements for friends and family has grown into a beloved local destination for floral artistry.</p>
+                        <p>We take pride in sourcing the freshest seasonal blooms, supporting local growers whenever possible, and approaching each arrangement as a work of art. Our commitment to quality and creativity has made us a trusted partner for weddings, events, and everyday celebrations throughout the community.</p>
+                        <a href="about.html" class="btn btn-secondary" style="margin-top: 1rem;">Learn Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section style="background-color: var(--color-secondary); margin: 0; max-width: 100%; padding: 5rem 2rem;">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title">Let's Create Something Beautiful Together</h2>
+                <p style="color: var(--color-text-light); font-size: 1.1rem; margin-bottom: 1.5rem;">
+                    Whether you have a clear vision or need a little inspiration, we're here to help bring your floral dreams to life. Reach out to schedule a consultation, place an order, or simply stop by our studio to say hello—we'd love to meet you.
+                </p>
+                <p style="color: var(--color-text-light); font-size: 1.1rem; margin-bottom: 2rem;">
+                    Your next beautiful moment is just a conversation away.
+                </p>
+                <div>
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                    <a href="gallery.html" class="btn btn-secondary" style="margin-left: 1rem;">Browse Our Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Asiya's Flowers</h4>
+                <p>Boutique flower shop and floral design studio, creating beautiful moments through the art of flowers.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Mon - Fri: 9am - 6pm</p>
+                <p>Saturday: 10am - 5pm</p>
+                <p>Sunday: 11am - 4pm</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>847 Magnolia Avenue, Suite 102</p>
+                <p>Rosewood Heights, FL 33701</p>
+                <p>(727) 555-0192</p>
+                <p>hello@asiyasflowers.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Asiya's Flowers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
