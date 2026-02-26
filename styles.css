@@ -1386,3 +1386,56 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+/* ===== Contact Form Validation States ===== */
+.field-error {
+    border: 2px solid #e63946;
+    background-color: #fff5f5;
+    outline-color: #e63946;
+}
+
+.field-success {
+    border: 2px solid #2a9d8f;
+    background-color: #f4faf9;
+    outline-color: #2a9d8f;
+}
+
+.error-message {
+    display: block;
+    color: #e63946;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+input.field-success,
+textarea.field-success,
+select.field-success {
+    border-color: green;
+    outline: 2px solid rgba(0, 200, 0, 0.3);
+}
+input.field-error,
+textarea.field-error,
+select.field-error {
+    border-color: red;
+    outline: 2px solid rgba(255, 0, 0, 0.3);
+}
+
+/* Step 7: Success Message Styles */
+#success-message {
+    padding: 24px;
+    border: 2px solid #2a9d8f;
+    border-radius: 6px;
+    background-color: #f4faf9;
+    color: #2a9d8f;
+    text-align: center;
+  }
+  
+  #success-message h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+  }
+  
+  #success-message p {
+    margin: 0;
+    font-size: 0.95rem;
+  }

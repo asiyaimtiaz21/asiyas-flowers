@@ -1,0 +1,11 @@
+# Process Reflection: Contact Form Validation Feature
+
+For this project, I worked on improving the contact form on my website. I added validation and visual feedback on the fields. I also added a success message after the form is submitted correctly. While I do feel like it was a bit time consuming, using the micro-iteration workflow was really helpful. I could focus on one small step at a time, like for when I was just trying to show error messages or highlight fields. It also made debugging a lot easier because I didn’t have to guess where something went wrong.
+
+During step two, I had Claude review its code in case it missed anything and it returned and while it did not find any major issues, it did give me a few things I needed to adjust, like a missing 'id' and including a 'if (!form) return' to prevent crashing and other helpful implementations. Besides those minor details, it did everything well for the most part and did not miss anything.
+
+Overall, I liked using Claude Web in the browser. It was nice to see the AI generate code quickly and give helpful suggestions step by step. It did take me some time to get comfortable with it since I was not used to using it on the web and have been so used to using Claude in terminal but it was an interesting experience! I like using Claude in the terminal more so far because the changes felt more direct which claude web doesn't do, however, it was nice to use it on the web so you can really plan out the changes and implementations you are making to your code without it feeling so technical like it does in terminal sometimes.
+
+For me, micro-iteration and self review makes the workflow a lot easier to handle and minimizes the amount of mistakes being made. I would definitely use this when trying to create features that has multiple pieces interacting. If I am implementing fairly easy and basic features, I wouldn't need to use it much in that case.
+
+This assignment really showed me how useful Claude on the web is and that breaking things down into dmaller tests and testing it after can make my process a lot smoother and easier to keep up with and also that self-reviewal is necessary to make yourself better because while Claude is not perfect, it is a great tool.
