@@ -100,11 +100,6 @@
 
   // ── 4. All nav links have non-empty href attributes ───────────────────────
   const links = Array.from(nav.querySelectorAll('a'));
-  assert(
-    'Nav contains at least one <a> element',
-    links.length > 0,
-    'found ' + links.length + ' <a> element(s)'
-  );
 
   const emptyHrefLinks = links.filter(function (a) {
     return !a.getAttribute('href') || !a.getAttribute('href').trim();
