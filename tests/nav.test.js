@@ -4,6 +4,24 @@
  * Usage (either method works):
  *   1. Browser console — open any page, paste this entire file and press Enter
  *   2. Script tag     — add <script src="tests/nav.test.js"></script> before </body>
+ *
+ * Expected nav structure (all 6 tests pass with this pattern):
+ *
+ *   <header>                          ← position: sticky keeps nav visible on scroll
+ *     <nav class="nav-container">
+ *       <a href="index.html" class="logo">…</a>   ← logo = home link (index.html)
+ *       <ul class="nav-menu">
+ *         <li><a href="about.html">About</a></li>
+ *         <li><a href="services.html">Services</a></li>
+ *         <li><a href="gallery.html">Gallery</a></li>
+ *         <li><a href="contact.html">Contact</a></li>
+ *       </ul>
+ *     </nav>
+ *   </header>
+ *
+ * Key rule: the logo already links to index.html, so there must be NO
+ * separate "Home" <li> in the menu — that would create a duplicate href
+ * and fail test 6 (No duplicate hrefs among nav links).
  */
 
 (async function runNavTests() {
