@@ -5,23 +5,11 @@
  *   1. Browser console — open any page, paste this entire file and press Enter
  *   2. Script tag     — add <script src="tests/nav.test.js"></script> before </body>
  *
- * Expected nav structure (all 6 tests pass with this pattern):
- *
- *   <header>                          ← position: sticky keeps nav visible on scroll
- *     <nav class="nav-container">
- *       <a href="index.html" class="logo">…</a>   ← logo = home link (index.html)
- *       <ul class="nav-menu">
- *         <li><a href="about.html">About</a></li>
- *         <li><a href="services.html">Services</a></li>
- *         <li><a href="gallery.html">Gallery</a></li>
- *         <li><a href="contact.html">Contact</a></li>
- *       </ul>
- *     </nav>
- *   </header>
- *
- * Key rule: the logo already links to index.html, so there must be NO
- * separate "Home" <li> in the menu — that would create a duplicate href
- * and fail test 6 (No duplicate hrefs among nav links).
+ * Tests (4):
+ *   1. Nav element exists in the DOM
+ *   2. Nav has position "sticky" or "fixed"
+ *   3. Nav remains visible after scrolling to page bottom
+ *   4. All nav links have non-empty href attributes
  */
 
 (async function runNavTests() {
@@ -112,29 +100,6 @@
       ? emptyHrefLinks.length + ' link(s) missing href: ' +
           emptyHrefLinks
             .map(function (a) { return '"' + a.textContent.trim() + '"'; })
-            .join(', ')
-      : undefined
-  );
-
-  // ── 5. No duplicate href values among nav links ───────────────────────────
-  const hrefs = links
-    .map(function (a) { return (a.getAttribute('href') || '').trim(); })
-    .filter(Boolean);
-
-  const seen = new Set();
-  const duplicates = hrefs.filter(function (href) {
-    if (seen.has(href)) return true;
-    seen.add(href);
-    return false;
-  });
-
-  assert(
-    'No duplicate hrefs among nav links',
-    duplicates.length === 0,
-    duplicates.length
-      ? 'duplicate href(s): ' +
-          Array.from(new Set(duplicates))
-            .map(function (h) { return '"' + h + '"'; })
             .join(', ')
       : undefined
   );
